@@ -1,0 +1,73 @@
+body {
+    background-color: #1e1f22;
+    color: #fff;
+  }
+
+  .topbar {
+    background-color: #2b2d31;
+    padding: 16px 24px;
+    border-bottom: 1px solid #1a1b1e;
+  }
+
+  .search-box {
+    background-color: #1a1b1e;
+    border: none;
+    color: #fff;
+  }
+
+  .search-box::placeholder {
+    color: #777;
+  }
+
+  .category-btn {
+    background-color: #3a3c43;
+    border: none;
+    color: #ccc;
+    margin-right: 10px;
+    border-radius: 6px;
+    padding: 6px 14px;
+    transition: 0.2s;
+  }
+
+  .category-btn:hover {
+    background-color: #4a4d55;
+  }
+
+  .category-btn.active {
+    background-color: #5865f2;
+    color: #fff;
+  }
+
+  .server-card {
+    background-color: #2b2d31;
+    border: none;
+    border-radius: 12px;
+    padding: 20px;
+    transition: 0.2s;
+    border: 1px solid #1a1b1e;
+  }
+
+  .server-card:hover {
+    background-color: #32343a;
+    transform: translateY(-2px);
+  }
+
+  .server-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
+    margin-bottom: 12px;
+  }
+
+  .join-btn {
+    background-color: #5865f2;
+    border: none;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.2s;
+  }
+
+  .join-btn:hover {
+    background-color: #4752c4;
+  }

@@ -1,0 +1,78 @@
+{
+    "page": 1,
+    "limit": 50,
+    "count": 6,
+    "data": [{
+        "id": 7,
+        "server_id": "298146426926530561",
+        "server_name": "JoJo's Bizarre Adventure",
+        "server_invite": "https://discord.gg/jjba",
+        "server_icon": "https://cdn.discordapp.com/icons/298146426926530561/76759ec10fade74b271aedc76ccbc36f.png?size=1024",
+        "tag_name": "JoJo",
+        "category": 0,
+        "lang": "English",
+        "bumped": 1768711855,
+        "created_at": 1768711855,
+        "description": "テスト"
+    }, {
+        "id": 6,
+        "server_id": "1369598255956099072",
+        "server_name": "KAF︱GUILD TAG",
+        "server_invite": "https://discord.gg/XH7ERRX3Bj",
+        "server_icon": "https://cdn.discordapp.com/icons/1369598255956099072/189aaa231c80142e2b3fe66768b0bdbc.png?size=1024",
+        "tag_name": "花譜",
+        "category": 0,
+        "lang": "English",
+        "bumped": 1767722649,
+        "created_at": 1767722649,
+        "description": ""
+    }, {
+        "id": 4,
+        "server_id": "1310553833474228224",
+        "server_name": "神椿 魔女交流社",
+        "server_invite": "https://discord.gg/en4WaXM96B",
+        "server_icon": "https://cdn.discordapp.com/icons/1310553833474228224/e97198db6e1670adbd71336e6b542b4b.png?size=1024",
+        "tag_name": "観測者",
+        "category": 0,
+        "lang": "Chinese",
+        "bumped": 1767720434,
+        "created_at": 1767720434,
+        "description": ""
+    }, {
+        "id": 3,
+        "server_id": "1338963089873178654",
+        "server_name": "RJM Japanese Music",
+        "server_invite": "https://discord.gg/weFkwp4fwy",
+        "server_icon": "https://cdn.discordapp.com/icons/1338963089873178654/bf1f8120376fef351667608c2d05db8e.png?size=1024",
+        "tag_name": "JP音楽",
+        "category": 0,
+        "lang": "English",
+        "bumped": 1767720240,
+        "created_at": 1767720240,
+        "description": ""
+    }, {
+        "id": 2,
+        "server_id": "521615713048199169",
+        "server_name": "ボカロなう",
+        "server_invite": "https://discord.gg/pQYUjWu",
+        "server_icon": "https://cdn.discordapp.com/icons/521615713048199169/a_ac522dfb5e3d2cc60c7c1b4f72f035e2.gif?size=1024",
+        "tag_name": "ボカロ",
+        "category": 0,
+        "lang": "Japanese",
+        "bumped": 1767719293,
+        "created_at": 1767719293,
+        "description": ""
+    }, {
+        "id": 1,
+        "server_id": "1451885154107658322",
+        "server_name": "諏訪霊園",
+        "server_invite": "https://discord.gg/nvy8wNhCgR",
+        "server_icon": "https://cdn.discordapp.com/icons/1451885154107658322/07ff305932f1ca00e8997153857a913e.png?size=1024",
+        "tag_name": "諏訪霊園",
+        "category": 0,
+        "lang": "Japanese",
+        "bumped": 1767394566,
+        "created_at": 1767394566,
+        "description": ""
+    }]
+}
