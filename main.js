@@ -8,6 +8,7 @@ window.addEventListener("DOMContentLoaded", async function () {
         const a = serverdata.data[i];
         console.log(JSON.stringify(a));
         cards.appendChild(createcard(
+            a.server_id,
             a.server_name, 
             a.tag_name,
             //"/5.png",
@@ -16,4 +17,5 @@ window.addEventListener("DOMContentLoaded", async function () {
             a.description
         ));
     }
+    
 });
