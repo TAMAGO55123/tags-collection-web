@@ -1,5 +1,6 @@
 window.addEventListener("DOMContentLoaded", async function () {
-    const apiurl = "/test.json";
+    // const apiurl = "/test.json";
+    const apiurl = "https://tags-collection-api.aoku.workers.dev/tags"
     const serverdata = await ( await fetch(apiurl, {
         method: "GET"
     })).json();
