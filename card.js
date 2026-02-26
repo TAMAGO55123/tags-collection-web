@@ -1,6 +1,6 @@
 function createcard(serverid, servername, tagname, servericon, serverinvite, description){
     const main_card = document.createElement("div");
-    main_card.classList.add("col-md-4");
+    main_card.classList.add("col");
     main_card.id = serverid;
     const card_div = document.createElement("div");
     card_div.classList.add("server-card");

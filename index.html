@@ -32,25 +32,24 @@
         <h2 style="color: red;">※βなので鯖は適当です</h2>
 
         <!-- カテゴリ -->
-        <div class="p-3" id="cat">
+        <div class="p-3 " id="cat">
             分類
-            <button class="category-btn active">すべて</button>
-            <button class="category-btn">通常</button>
-            <button class="category-btn">参加申請</button>
-            <button class="category-btn">危険</button>
+            <button class="category-btn active" value="all">すべて</button>
+            <button class="category-btn" value="normal">通常</button>
+            <button class="category-btn" value="request">参加申請</button>
         </div>
         <!-- カテゴリ -->
         <div class="p-3" id="lang-cat">
             言語
-            <button class="category-btn active">すべて</button>
-            <button class="category-btn">日本語</button>
-            <button class="category-btn">英語</button>
-            <button class="category-btn">中国語</button>
+            <button class="category-btn active" value="all">すべて</button>
+            <button class="category-btn" value="Japanese">日本語</button>
+            <button class="category-btn" value="English">英語</button>
+            <button class="category-btn" value="Chinese">中国語</button>
         </div>
 
         <!-- サーバー一覧 -->
         <div class="container">
-            <div class="row g-4 servers">
+            <div class="row g-4 servers row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
             </div>
         </div>
         <script src="/main.js"></script>
