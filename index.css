@@ -1,25 +1,16 @@
 body {
     background-color: #1e1f22;
     color: #fff;
-  }
+    width: 100%;
+}
 
-  .topbar {
+.topbar {
     background-color: #2b2d31;
     padding: 16px 24px;
     border-bottom: 1px solid #1a1b1e;
-  }
+}
 
-  .search-box {
-    background-color: #1a1b1e;
-    border: none;
-    color: #fff;
-  }
-
-  .search-box::placeholder {
-    color: #777;
-  }
-
-  .category-btn {
+.category-btn {
     background-color: #3a3c43;
     border: none;
     color: #ccc;
@@ -27,47 +18,139 @@ body {
     border-radius: 6px;
     padding: 6px 14px;
     transition: 0.2s;
-  }
+}
 
-  .category-btn:hover {
+.category-btn:hover {
     background-color: #4a4d55;
-  }
+}
 
-  .category-btn.active {
+.category-btn.active {
     background-color: #5865f2;
     color: #fff;
-  }
+}
 
-  .server-card {
+.server-card {
     background-color: #2b2d31;
     border: none;
     border-radius: 12px;
     padding: 20px;
     transition: 0.2s;
     border: 1px solid #1a1b1e;
-  }
+}
 
-  .server-card:hover {
+.server-card:hover {
     background-color: #32343a;
     transform: translateY(-2px);
-  }
+}
 
-  .server-icon {
+.server-icon {
     width: 80px;
     height: 80px;
     border-radius: 16px;
     margin-bottom: 12px;
-  }
+}
 
-  .join-btn {
+.join-btn {
     background-color: #5865f2;
     border: none;
     color: #fff;
     padding: 8px 14px;
     border-radius: 6px;
     transition: 0.2s;
-  }
+}
 
-  .join-btn:hover {
+.join-btn:hover {
     background-color: #4752c4;
-  }
+}
+
+.server-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* ← 行数制限 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.server-title.full {
+    display: block;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: unset;
+    overflow: visible;
+}
+
+#search-box {
+    background-color: #1a1b1e;
+    border: none;
+    color: #fff;
+    min-width: 120px;
+    transition: width 0.3s ease; /* ← アニメーション */
+}
+
+.search-box::placeholder {
+    color: #777;
+}
+
+#main-icon{
+    width: 35px;
+    height: 35px;
+}
+
+.hover-wrapper {
+    position: relative; /* 詳細をこの中で絶対配置する */
+}
+
+.bot-add-hover-txt {
+    position: absolute;
+    top: 100%;           /* ボタンの真下に表示 */
+    left: 50%;
+    transform: translateX(-50%) translateY(5px);
+    width: max-content;
+    max-width: 250px;
+
+    background: #2b2d31;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+    opacity: 0;
+    transform: translateY(5px);
+    pointer-events: none;
+
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* ボタンにホバーしたら詳細を表示 */
+.bot-add-btn:hover + .bot-add-hover-txt {
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+    opacity: 1;
+}
+
+
+@media (max-width: 600px) {
+    .top-right {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #search-box {
+        width: 120px;              /* 初期は小さめ */
+        transition: width 0.3s ease;
+    }
+
+    #search-box:focus {
+        width: 100%;               /* ← タップしたらスッと広がる */
+    }
+
+    #search-box:focus ~ #title {
+        display: none;
+    }
+
+    #search-box:focus + .bot-link {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+}
+
+
