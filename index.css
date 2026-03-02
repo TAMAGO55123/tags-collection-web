@@ -126,6 +126,14 @@ body {
     opacity: 1;
 }
 
+#page-changer button{
+    width: 40px;
+    height: 40px;
+}
+#page-changer p{
+    margin: 0;
+    font-size: 35px;
+}
 
 @media (max-width: 600px) {
     .top-right {
