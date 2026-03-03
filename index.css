@@ -161,4 +161,37 @@ body {
     }
 }
 
-
+/* https://qiita.com/nolanlover0527/items/6d0091a429e1f3c58e02#3-%E5%B9%BE%E4%BD%95%E5%AD%A6%E7%9A%84%E3%83%A2%E3%83%BC%E3%83%95%E3%82%A3%E3%83%B3%E3%82%B0 */
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.geometric-morph {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #b9c0d5, #51555c);
+    position: relative;
+    animation: morph 3s ease-in-out infinite;
+}
+  
+@keyframes morph {
+    0%, 100% {
+        border-radius: 20%;
+        transform: rotate(0deg) scale(1);
+    }
+    25% {
+        border-radius: 50%;
+        transform: rotate(90deg) scale(0.9);
+    }
+    50% {
+        border-radius: 5%;
+        transform: rotate(180deg) scale(1.1);
+    }
+    75% {
+        border-radius: 50%;
+        transform: rotate(270deg) scale(0.9);
+    }
+}
+  
