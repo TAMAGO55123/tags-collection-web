@@ -34,7 +34,7 @@ window.addEventListener("DOMContentLoaded", async function () {
             const a = serverdata.data[i];
             //console.log(JSON.stringify(a));
             cards.appendChild(createcard(
-                a.server_id,
+                a.id,
                 a.server_name, 
                 a.tag_name,
                 //"/5.png",
@@ -133,7 +133,7 @@ window.addEventListener("DOMContentLoaded", async function () {
             );
         }
     });
-    const params = new URLSearchParams(this.location.search);
+    const params = new URLSearchParams(location.search);
     search_box.value = params.get("search");
     page = params.has("page") ? Number(params.get("page")) : 1;
     let category = document.querySelector(params.has("category") ? `div#cat button[value=${params.get("category")}]` : "div#cat button[value=all]");

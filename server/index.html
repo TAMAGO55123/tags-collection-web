@@ -28,7 +28,7 @@
         <link rel="icon" type="image/png" sizes="512x512" href="/favicons/android-chrome-512x512.png">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="stylesheet" href="/index.css">
+        <link rel="stylesheet" href="/server/server.css">
         <script src="/func.js"></script>
         <script src="/invite.js"></script>
         <script src="/card.js"></script>
@@ -52,22 +52,9 @@
         <noscript>
             <p class="text-center">Javascriptが有効になっていません。<br>設定から有効化してください。</p>
         </noscript>
-          
 
-        <!-- カテゴリ -->
-        <div class="p-3 " id="cat">
-            分類
-            <button class="category-btn" value="all">すべて</button>
-            <button class="category-btn" value="normal">通常</button>
-            <button class="category-btn" value="request">参加申請</button>
-        </div>
-        <!-- カテゴリ -->
-        <div class="p-3" id="lang-cat">
-            言語
-            <button class="category-btn" value="all">すべて</button>
-            <button class="category-btn" value="Japanese">日本語</button>
-            <button class="category-btn" value="English">英語</button>
-            <button class="category-btn" value="Chinese">中国語</button>
+        <div id="server" class="container">
+            
         </div>
 
         <br>
@@ -76,21 +63,9 @@
                 <div class="geometric-morph"></div>
             </div>
             <br>
-        </div>  
-
-        <!-- サーバー一覧 -->
-        <div class="container">
-            <div class="row g-4 servers row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4"></div>
-        </div>
-        <p id="here-nothing" class="text-center d-none"><br>ここには何もありません</p>
-        <br>
-        <div id="page-changer" class="d-flex justify-content-center align-items-center">
-            <button class="btn btn-primary" id="page-back"><i class="bi bi-arrow-left"></i></button>
-            <p><span id="now-page"></span>/<span id="all-page"></span>ページ</p>
-            <button class="btn btn-primary" id="page-next"><i class="bi bi-arrow-right"></i></button>
         </div>
         <textarea class="opacity-0" id="copy"></textarea>
-        <script src="/main.js"></script>
+        <script src="/server/server.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     </body>
 </html>
