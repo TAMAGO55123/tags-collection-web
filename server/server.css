@@ -10,6 +10,24 @@ body {
     border-bottom: 1px solid #1a1b1e;
 }
 
+.space-12{
+    margin-top: 12px;
+}
+
+.btn-color, .btn-color:focus {
+    background-color: #5865f2;
+    border: none;
+}
+.btn-color:hover {
+    background-color: #4752c4;
+}
+.btn-color:focus {
+    border: white solid 1px;
+}
+.btn-color:disabled {
+    background-color: #3a3c43;
+}
+
 .join-btn {
     margin-top: 10px;
     background-color: #5865f2;

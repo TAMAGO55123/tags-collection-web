@@ -114,6 +114,8 @@ window.addEventListener("DOMContentLoaded", async function () {
                 document.querySelector("#lang-cat .category-btn.active").value,
                 search_box.value.trim()
             );
+            page_back.disable = page <= 1;
+            page_next.disable = page >= Number(all_page.textContent);
         }
     });
     page_next.addEventListener("click", async () => {
@@ -131,6 +133,8 @@ window.addEventListener("DOMContentLoaded", async function () {
                 document.querySelector("#lang-cat .category-btn.active").value,
                 search_box.value.trim()
             );
+            page_back.disabled = page <= 1;
+            page_next.disabled = page >= Number(all_page.textContent);
         }
     });
     const params = new URLSearchParams(location.search);
@@ -145,4 +149,6 @@ window.addEventListener("DOMContentLoaded", async function () {
         document.querySelector("#lang-cat .category-btn.active").value,
         search_box.value.trim()
     );
+    page_back.disabled = page <= 1;
+    page_next.disabled = page >= Number(all_page.textContent);
 });

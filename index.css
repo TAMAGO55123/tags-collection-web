@@ -10,6 +10,20 @@ body {
     border-bottom: 1px solid #1a1b1e;
 }
 
+.btn-color, .btn-color:focus {
+    background-color: #5865f2;
+    border: none;
+}
+.btn-color:hover, .btn-color:active {
+    background-color: #4752c4;
+}
+.btn-color:focus {
+    border: white solid 1px;
+}
+.btn-color:disabled {
+    background-color: #3a3c43;
+}
+
 .category-btn {
     background-color: #3a3c43;
     border: none;
