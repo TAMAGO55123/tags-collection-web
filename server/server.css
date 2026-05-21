@@ -114,6 +114,8 @@ img.servericon {
     width: 100%;
     max-width: 200px;
     border-radius: 30px;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
 }
 
 div#server h4 {

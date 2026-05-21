@@ -58,10 +58,12 @@ body {
 }
 
 .server-icon {
-    width: 80px;
-    height: 80px;
+    max-width: 80px;
+    max-height: 80px;
     border-radius: 16px;
     margin-bottom: 12px;
+    object-fit: contain;
+    aspect-ratio: 1 / 1;
 }
 
 .join-btn {
@@ -106,6 +108,7 @@ body {
 #main-icon{
     width: 35px;
     height: 35px;
+    object-fit: cover;
 }
 
 .hover-wrapper {
