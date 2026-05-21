@@ -64,13 +64,18 @@ window.addEventListener("DOMContentLoaded", async function () {
             e.target.parentElement.querySelectorAll(".category-btn").forEach(b => b.classList.remove("active"));
             e.target.classList.add("active");
             const url = new URL(window.location.href);
+            page = 1
             url.searchParams.set("category", document.querySelector("#cat .category-btn.active").value);
             url.searchParams.set("lang", document.querySelector("#lang-cat .category-btn.active").value);
+            url.searchParams.set("page", page);
             if(document.querySelector("#cat .category-btn.active").value == "all"){
                 url.searchParams.delete("category");
             }
             if(document.querySelector("#lang-cat .category-btn.active").value == "all"){
                 url.searchParams.delete("lang")
+            }
+            if(page == 1) {
+                url.searchParams.delete("page");
             }
             history.replaceState(null, "", url);
             await renderTags(
@@ -86,6 +91,7 @@ window.addEventListener("DOMContentLoaded", async function () {
             e.preventDefault()
             page = 1
             const url = new URL(window.location.href);
+            
             url.searchParams.set("search", search_box.value.trim());
             if(search_box.value.trim() == "") {
                 url.searchParams.delete("search");
