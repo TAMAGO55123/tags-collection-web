@@ -27,9 +27,7 @@ window.addEventListener("DOMContentLoaded", async function () {
             method: "GET",
         })).json();
         cards.innerHTML = "";
-        let rows; 
-        if(serverdata.limit < serverdata.count){rows = serverdata.limit;}
-        else{rows = serverdata.count} 
+        let rows = serverdata.limit < serverdata.count ? serverdata.limit : serverdata.count;
         for(let i = 0;i<rows;i++){
             const a = serverdata.data[i];
             //console.log(JSON.stringify(a));
