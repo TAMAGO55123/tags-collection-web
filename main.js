@@ -31,6 +31,7 @@ window.addEventListener("DOMContentLoaded", async function () {
         for(let i = 0;i<rows;i++){
             const a = serverdata.data[i];
             //console.log(JSON.stringify(a));
+            if(!a) break;
             cards.appendChild(createcard(
                 a.id,
                 a.server_name, 
